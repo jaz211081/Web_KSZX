@@ -1,52 +1,89 @@
 *{box-sizing: border-box;}
 
 body{margin: 0px;
-    background: linear-gradient(to bottom,rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 240),rgb(255, 248, 215));
+    background-color: rgb(242, 242, 242);
     height: 100vh;
     }
 nav{ /*導覽列設定*/
-    background-color: rgb(164, 164, 199);
+    /* position:fixed; */
+    background-color: rgb(220, 220, 220);
     padding: 0%;
     font-family: 微軟正黑體;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav ul{ /*導覽列-項目設定*/
     list-style-type: none; /*除去項目符號*/
     display: inline-flex; /*橫向排列*/
-    float:left;
-    font-size: 16px;
+    align-items: center;
+    font-size: 3vh;
     font-weight: bold;
     margin: 0px;
-    margin-right: 30px;
 }
 
 nav li{ /*導覽列-細項設定*/
-    padding: 12px; /*文字水平間距*/
+    padding: 2vw; /*文字水平間距*/
 } 
 nav ul :hover{ /*導覽列-鼠標覆蓋設定*/
     background-color: lightblue;
 }
 nav a{ /*導覽列-超連結設定*/
-    color:rgb(160, 95, 95);
+    color:rgb(90, 90, 90);
     text-decoration: none;
 }
 
 header{
-    background-image: url(images/Main_A01.jpg);
-    background-position:0px -300px;
-    width:80%;
-    height: 30vh;
-    margin-left: 3vw;
-    display: flex; /*沒有這行，背景字不會對齊*/
+    background-image: url(https://img.freepik.com/free-photo/top-view-background-beautiful-white-grey-brown-cream-blue-background_140725-72219.jpg?w=2000);
+    /* background-position:0px -400px; */
+    background-size: cover;
+    width:100vw;
+    height: 40vh;
+    /* margin-top: 1vh; */
+    /* margin-left: 10vw; */
+    display: flex;
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
 }
+
 header h1{
     color: aliceblue;
+    letter-spacing: 5px;
+    font-size: 5vh;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color:black;
 }
 
+h1{
+    font-size: 5vw;
+    letter-spacing: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Hpic01{
+    width:80vw;
+}
+
+table{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table img{
+    /* width: 100%; */
+    max-height: 20vh;
+    margin: 3vw;
+    margin-top: 3px;
+    border-radius: 10px;
+}
 footer{
-    position: fixed;
+    /* position: fixed; */
     bottom: 0px;
     left: 0;
     width: 100%;
@@ -54,14 +91,23 @@ footer{
     background-color: darkgrey;
     text-align: center;
 }
-/*cell-phone*/
+
+.tableWord {
+    font-size: 3vw;
+}
+
+
+
+
+
+/* cell-phone */
 [class *=col-]{
 width: 100%;
 float: left;
 padding: 15px;
 }
 
-/* Tablet
+/* Tablet */
 @media only screen and (min-width:992px){
 .col-m-1{width: 8.33%;}
 .col-m-2{width: 16.66%;}
@@ -77,8 +123,8 @@ padding: 15px;
 .col-m-12{width: 100px;}
 }
 
-/*desktop*/
-/* @media only screen and (min-width:1200px){
+/* desktop */
+@media only screen and (min-width:1200px){
 .col-1{width: 8.33%;}
 .col-2{width: 16.66%;}
 .col-3{width: 25%;}
@@ -91,4 +137,4 @@ padding: 15px;
 .col-10{width: 83.33%;}
 .col-11{width: 91.66%;}
 .col-12{width: 100px;}
-} */ 
+} 
