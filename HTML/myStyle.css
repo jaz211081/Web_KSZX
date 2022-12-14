@@ -122,6 +122,14 @@ footer{
     text-align: center;
 }
 
+@media (min-width: 992px)
+ {
+    .navbar-expand-lg .navbar-collapse{
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: center; 
+}
+}
 /* cell-phone */
 /* [class *=col-]{
 width: 100%;

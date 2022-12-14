@@ -1,0 +1,19 @@
+footer{
+    /* position: fixed; */
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    padding: 8px;
+    background-color: darkgrey;
+    text-align: center;
+}
+
+@media (min-width: 992px)
+ {
+    .navbar-expand-lg .navbar-collapse{
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: center; 
+}
+}
+
